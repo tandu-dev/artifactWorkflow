@@ -11,6 +11,9 @@ jobs:
      name: create_artifact
      runs-on: ubuntu-latest
      steps:
+       - name: Setup Go Environment
+         uses: actions/setup-go@v5.0.0
+         
        - name: Check out code
          uses: actions/checkout@v1
        
